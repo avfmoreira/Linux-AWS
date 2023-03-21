@@ -1,0 +1,14 @@
+#########USER MANAGEMENT
+
+#useradd _username
+-m //create home folder
+-c //name or commet about the user: "Han Solo"
+-s //define shell to user: /bin/bash
+
+#userdel (-f)
+
+#passwd _username // define password to user
+
+#chsh -s _shellpath _usaname //assign a shell to user
+
+######
