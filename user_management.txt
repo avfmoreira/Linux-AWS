@@ -3,12 +3,27 @@
 #useradd _username
 -m //create home folder
 -c //name or commet about the user: "Han Solo"
--s //define shell to user: /bin/bash
+-s //define bash to user: /bin/bash
+-e //expire date of new account
 
 #userdel (-f)
 
 #passwd _username // define password to user
 
-#chsh -s _shellpath _usaname //assign a shell to user
+if I need to set a password to user, it must be encrypted and to do that use:
+openssl passwd -1 -stdin <<< _password
 
-######
+-e //expire date of password
+
+#chsh -s _bashpath _usaname //assign a bash to user
+
+#usermod _username 
+-s /bin/bash /assign a bash to user
+
+
+
+#groupadd _GROUPNAME //create group
+#groupdel _GROUPNAME //remove group
+
+#usermod -G _GROUPNAME _username //add user to group
+

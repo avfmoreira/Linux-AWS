@@ -1,0 +1,33 @@
+######### PERMISSIONS SYSTEM
+
+drwxr-xr-x
+-rw-r--r--
+
+ls -l:
+
+first char:
+
+d = directory
+- = file
+
+rest 9 of then, so:
+
+rwx - owner
+
+rwx - group
+
+rwx - others
+
+
+#chown _username:_groupname directory // change own and groupof directory/file 
+
+
+chmod
+
+read - 4
+write - 2
+execute - 1
+none - 0
+sum!
+
+
